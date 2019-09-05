@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AuctionCreation/Services/AuctionService.swift"
+            timestampString = "589338087.931931"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "post(url:headers:parameters:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in AuctionCreation.AuctionService.post(url: Swift.String, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, completion: (AuctionCreation.ServiceResponse&lt;Swift.Optional&lt;Swift.String&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AuctionCreation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegopardo/Desktop/AuctionCreation/AuctionCreation/Services/AuctionService.swift"
+                  timestampString = "589338000.666333"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "342">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in AuctionCreation.AuctionService.post(url: Swift.String, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, completion: (AuctionCreation.ServiceResponse&lt;Swift.Optional&lt;Swift.String&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AuctionCreation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegopardo/Desktop/AuctionCreation/AuctionCreation/Services/AuctionService.swift"
+                  timestampString = "589338000.668664"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "346">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AuctionCreation/Services/AuctionService.swift"
+            timestampString = "589338087.932286"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "post(url:headers:parameters:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
