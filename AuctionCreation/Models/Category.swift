@@ -20,7 +20,7 @@ struct Category: Codable {
 
 extension Category {
     init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: Keys.self) // defining our (keyed) container
+        let container = try decoder.container(keyedBy: Keys.self)
         let auctionId: Int = try container.decode(Int.self, forKey: .auctionId)
         let catid: Int = try container.decode(Int.self, forKey: .catid)
         let id: Int = try container.decode(Int.self, forKey: .id)

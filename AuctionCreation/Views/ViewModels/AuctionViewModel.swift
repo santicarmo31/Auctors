@@ -9,11 +9,12 @@
 import Foundation
 
 struct AuctionViewModel {
-    var auctionResponse: AuctionResponse
+    // MARK: - Vars & Constants
     
+    var model: Auction
     
     var date: Date {
-        let date = Date(timeIntervalSince1970: TimeInterval(auctionResponse.auction.actualEndDate) / 1000)
+        let date = Date(timeIntervalSince1970: TimeInterval(model.actualEndDate) / milliSecondsFactor)
         return date
     }
     
@@ -24,22 +25,24 @@ struct AuctionViewModel {
     }
     
     var conditionCodeName: String {
-        return auctionResponse.auction.conditionCodeName
+        return model.conditionCodeName
     }
     
     var description: String {
-        return auctionResponse.auction.description
+        return model.description
     }
     
     var quantity: String {
-        return String(auctionResponse.auction.quantity)
+        return String(model.quantity)
     }
     
     var title: String {
-        return String(auctionResponse.auction.title)
+        return String(model.title)
     }
     
-    init(model: AuctionResponse) {
-        auctionResponse = model
+    private let milliSecondsFactor: Double = 1000
+    
+    init(model: Auction) {
+        self.model = model
     }
 }

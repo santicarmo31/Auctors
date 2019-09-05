@@ -24,13 +24,6 @@ struct Auction {
     var title: String
     let uniqueIdentifier: String
     
-    mutating func update(actualEndDate: Int, description: String, quantity: Int, title: String) {
-        self.actualEndDate = actualEndDate
-        self.description = description
-        self.quantity = quantity
-        self.title = title
-    }
-    
     private enum Keys: String, CodingKey {
         case actualEndDate
         case archived
@@ -46,6 +39,13 @@ struct Auction {
         case selected
         case title
         case uniqueIdentifier
+    }
+    
+    mutating func update(actualEndDate: Int, description: String, quantity: Int, title: String) {
+        self.actualEndDate = actualEndDate
+        self.description = description
+        self.quantity = quantity
+        self.title = title
     }
 }
 

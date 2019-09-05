@@ -20,7 +20,7 @@ struct Address: Codable {
 
 extension Address {
     init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: Keys.self) // defining our (keyed) container
+        let container = try decoder.container(keyedBy: Keys.self)
         let addrid: Int = try container.decode(Int.self, forKey: .addrid)
         let auctionId: Int = try container.decode(Int.self, forKey: .auctionId)
         let id: Int = try container.decode(Int.self, forKey: .id)

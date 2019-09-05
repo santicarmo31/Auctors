@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7E7B012BF9B256D91EF41A36 /* Pods_AuctionCreation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7489D32B66930DDE61D9A424 /* Pods_AuctionCreation.framework */; };
+		96F8F1B32320BD5400EB9AE5 /* AuctionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8F1B22320BD5400EB9AE5 /* AuctionHolder.swift */; };
+		96F8F1B52320C1B300EB9AE5 /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8F1B42320C1B300EB9AE5 /* ServiceResponse.swift */; };
+		96F8F1C72320C54500EB9AE5 /* AuctionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8F1C62320C54500EB9AE5 /* AuctionPresenterTests.swift */; };
+		96F8F1C92320CAD300EB9AE5 /* MockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8F1C82320CAD300EB9AE5 /* MockModel.swift */; };
+		96F8F1CB2320CB4C00EB9AE5 /* MockAuctionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8F1CA2320CB4C00EB9AE5 /* MockAuctionView.swift */; };
+		96F8F1CE2320CBA300EB9AE5 /* MockAuctionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8F1CD2320CBA300EB9AE5 /* MockAuctionService.swift */; };
 		A5AFEB3A23206BE200175BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFEB3923206BE200175BEC /* AppDelegate.swift */; };
 		A5AFEB3F23206BE200175BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AFEB3D23206BE200175BEC /* Main.storyboard */; };
 		A5AFEB4123206BE300175BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AFEB4023206BE300175BEC /* Assets.xcassets */; };
 		A5AFEB4423206BE300175BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AFEB4223206BE300175BEC /* LaunchScreen.storyboard */; };
-		A5AFEB4F23206BE300175BEC /* AuctionCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFEB4E23206BE300175BEC /* AuctionCreationTests.swift */; };
 		A5AFEB5F23206D3C00175BEC /* AuctionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFEB5E23206D3C00175BEC /* AuctionService.swift */; };
 		A5AFEB6123207CEA00175BEC /* AuctionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFEB6023207CEA00175BEC /* AuctionTableViewController.swift */; };
 		A5AFEB6523207D6F00175BEC /* AuctionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFEB6323207D6F00175BEC /* AuctionTableViewCell.swift */; };
@@ -41,6 +46,12 @@
 		28089DDB84D28D8514456C33 /* Pods-AuctionCreation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuctionCreation.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuctionCreation/Pods-AuctionCreation.release.xcconfig"; sourceTree = "<group>"; };
 		4F60B722352119B579384443 /* Pods_AuctionCreationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuctionCreationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7489D32B66930DDE61D9A424 /* Pods_AuctionCreation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuctionCreation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F8F1B22320BD5400EB9AE5 /* AuctionHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionHolder.swift; sourceTree = "<group>"; };
+		96F8F1B42320C1B300EB9AE5 /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
+		96F8F1C62320C54500EB9AE5 /* AuctionPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionPresenterTests.swift; sourceTree = "<group>"; };
+		96F8F1C82320CAD300EB9AE5 /* MockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockModel.swift; sourceTree = "<group>"; };
+		96F8F1CA2320CB4C00EB9AE5 /* MockAuctionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuctionView.swift; sourceTree = "<group>"; };
+		96F8F1CD2320CBA300EB9AE5 /* MockAuctionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuctionService.swift; sourceTree = "<group>"; };
 		A4FADDB5992B13368E7A1D88 /* Pods-AuctionCreationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuctionCreationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuctionCreationTests/Pods-AuctionCreationTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5AFEB3623206BE200175BEC /* AuctionCreation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuctionCreation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AFEB3923206BE200175BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +60,6 @@
 		A5AFEB4323206BE300175BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5AFEB4523206BE300175BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5AFEB4A23206BE300175BEC /* AuctionCreationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuctionCreationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5AFEB4E23206BE300175BEC /* AuctionCreationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionCreationTests.swift; sourceTree = "<group>"; };
 		A5AFEB5023206BE300175BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5AFEB5E23206D3C00175BEC /* AuctionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionService.swift; sourceTree = "<group>"; };
 		A5AFEB6023207CEA00175BEC /* AuctionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionTableViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +116,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		96F8F1B62320C1E400EB9AE5 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				A5AFEB3923206BE200175BEC /* AppDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		96F8F1B72320C1EE00EB9AE5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5AFEB4023206BE300175BEC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		96F8F1CC2320CB9800EB9AE5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				96F8F1C82320CAD300EB9AE5 /* MockModel.swift */,
+				96F8F1CA2320CB4C00EB9AE5 /* MockAuctionView.swift */,
+				96F8F1CD2320CBA300EB9AE5 /* MockAuctionService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		A5AFEB2D23206BE200175BEC = {
 			isa = PBXGroup;
 			children = (
@@ -129,16 +165,15 @@
 		A5AFEB3823206BE200175BEC /* AuctionCreation */ = {
 			isa = PBXGroup;
 			children = (
+				A5AFEB4523206BE300175BEC /* Info.plist */,
+				96F8F1B72320C1EE00EB9AE5 /* Resources */,
+				96F8F1B62320C1E400EB9AE5 /* AppDelegates */,
 				A5AFEB7923208D5100175BEC /* Extensions */,
-				A5AFEB6D232082E200175BEC /* ViewModels */,
-				A5AFEB6C2320818000175BEC /* Presenter */,
 				A5AFEB672320800500175BEC /* Protocols */,
+				A5AFEB6C2320818000175BEC /* Presenters */,
 				A5AFEB5B23206CD200175BEC /* Views */,
 				A5AFEB5A23206CCE00175BEC /* Models */,
 				A5AFEB5923206CC800175BEC /* Services */,
-				A5AFEB3923206BE200175BEC /* AppDelegate.swift */,
-				A5AFEB4023206BE300175BEC /* Assets.xcassets */,
-				A5AFEB4523206BE300175BEC /* Info.plist */,
 			);
 			path = AuctionCreation;
 			sourceTree = "<group>";
@@ -146,7 +181,8 @@
 		A5AFEB4D23206BE300175BEC /* AuctionCreationTests */ = {
 			isa = PBXGroup;
 			children = (
-				A5AFEB4E23206BE300175BEC /* AuctionCreationTests.swift */,
+				96F8F1CC2320CB9800EB9AE5 /* Mocks */,
+				96F8F1C62320C54500EB9AE5 /* AuctionPresenterTests.swift */,
 				A5AFEB5023206BE300175BEC /* Info.plist */,
 			);
 			path = AuctionCreationTests;
@@ -155,6 +191,7 @@
 		A5AFEB5923206CC800175BEC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				96F8F1B42320C1B300EB9AE5 /* ServiceResponse.swift */,
 				A5AFEB5E23206D3C00175BEC /* AuctionService.swift */,
 			);
 			path = Services;
@@ -166,6 +203,7 @@
 				A5AFEB702320831000175BEC /* Auction.swift */,
 				A5AFEB722320831700175BEC /* Address.swift */,
 				A5AFEB752320832700175BEC /* Category.swift */,
+				96F8F1B22320BD5400EB9AE5 /* AuctionHolder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +211,7 @@
 		A5AFEB5B23206CD200175BEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A5AFEB6D232082E200175BEC /* ViewModels */,
 				A5AFEB5D23206CE600175BEC /* Storyboards */,
 				A5AFEB5C23206CDE00175BEC /* Controllers */,
 			);
@@ -214,12 +253,12 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		A5AFEB6C2320818000175BEC /* Presenter */ = {
+		A5AFEB6C2320818000175BEC /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
 				A5AFEB6A2320817C00175BEC /* AuctionPresenter.swift */,
 			);
-			path = Presenter;
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		A5AFEB6D232082E200175BEC /* ViewModels */ = {
@@ -285,7 +324,7 @@
 		A5AFEB2E23206BE200175BEC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Apple Inc.";
 				TargetAttributes = {
@@ -420,9 +459,11 @@
 				A5AFEB6B2320817C00175BEC /* AuctionPresenter.swift in Sources */,
 				A5AFEB712320831000175BEC /* Auction.swift in Sources */,
 				A5AFEB6123207CEA00175BEC /* AuctionTableViewController.swift in Sources */,
+				96F8F1B52320C1B300EB9AE5 /* ServiceResponse.swift in Sources */,
 				A5AFEB6523207D6F00175BEC /* AuctionTableViewCell.swift in Sources */,
 				A5AFEB782320839700175BEC /* AuctionViewModel.swift in Sources */,
 				A5AFEB692320800F00175BEC /* ReusableIdentifier.swift in Sources */,
+				96F8F1B32320BD5400EB9AE5 /* AuctionHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +471,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5AFEB4F23206BE300175BEC /* AuctionCreationTests.swift in Sources */,
+				96F8F1CB2320CB4C00EB9AE5 /* MockAuctionView.swift in Sources */,
+				96F8F1CE2320CBA300EB9AE5 /* MockAuctionService.swift in Sources */,
+				96F8F1C72320C54500EB9AE5 /* AuctionPresenterTests.swift in Sources */,
+				96F8F1C92320CAD300EB9AE5 /* MockModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
