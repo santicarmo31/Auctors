@@ -13,5 +13,6 @@ struct MockModel {
     private init() {
     }
     
-    static let auctionHolder = AuctionHolder(auction: Auction.init(actualEndDate: 0, archived: true, auctionAppType: "", conditionCodeName: "", creationDate: "", description: "", id: 0, inventoryCode: "", modificationDate: "", orgId: 0, quantity: 0, selected: true, title: "TEST", uniqueIdentifier: ""), addresses: [], entityDescriptionTemplateData: [], categories: [])
+    static let auctionHolder = AuctionHolder(auction: Auction.init(archived: false, auctionAppType: "", creationDate: "", id: 0, inventoryCode: "", modificationDate: "", orgId: 0, selected: false, uniqueIdentifier: "", actualEndDate: 0, conditionCodeName: "", description: "", quantity: 0, title: "TEST"), addresses: [], entityDescriptionTemplateData: [], categories: [])
+    static let updatedAuction = Auction.init(archived: false, auctionAppType: "", creationDate: "", id: 0, inventoryCode: "", modificationDate: "", orgId: 0, selected: false, uniqueIdentifier: "", actualEndDate: 0, conditionCodeName: "", description: "", quantity: 0, title: "Update test")
 }

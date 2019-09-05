@@ -20,7 +20,6 @@ class AuctionPresenter {
     var auctionHolder: AuctionHolder?
     private unowned let view: AuctionView    
     
-    
     // MARK: - Life cycle
     
     init(view: AuctionView) {
@@ -35,9 +34,8 @@ class AuctionPresenter {
                 print("Error auction must be returned or the service failed")
                 return
             }
-            
-            self?.auctionHolder = response
             let viewModel = AuctionViewModel(model: response.auction)
+            self?.auctionHolder = response
             self?.view.display(viewModel)
         }
     }

@@ -9,20 +9,20 @@
 import Foundation
 
 struct Auction {
-    var actualEndDate: Int
     let archived: Bool
     let auctionAppType: String
-    var conditionCodeName: String
     let creationDate: String
-    var description: String
     let id: Int
     let inventoryCode: String
     let modificationDate: String
     let orgId: Int
-    var quantity: Int
     let selected: Bool
-    var title: String
     let uniqueIdentifier: String
+    private(set) var actualEndDate: Int64
+    private(set) var conditionCodeName: String
+    private(set) var description: String
+    private(set) var quantity: Int
+    private(set) var title: String
     
     private enum Keys: String, CodingKey {
         case actualEndDate
@@ -41,7 +41,7 @@ struct Auction {
         case uniqueIdentifier
     }
     
-    mutating func update(actualEndDate: Int, description: String, quantity: Int, title: String) {
+    mutating func update(actualEndDate: Int64, description: String, quantity: Int, title: String) {
         self.actualEndDate = actualEndDate
         self.description = description
         self.quantity = quantity
@@ -52,7 +52,7 @@ struct Auction {
 extension Auction: Codable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: Keys.self)
-        let actualEndDate: Int = try container.decode(Int.self, forKey: .actualEndDate)
+        let actualEndDate: Int64 = try container.decode(Int64.self, forKey: .actualEndDate)
         let archived: Bool = try container.decode(Bool.self, forKey: .archived)
         let auctionAppType: String = try container.decode(String.self, forKey: .auctionAppType)
         let conditionCodeName: String = try container.decode(String.self, forKey: .conditionCodeName)
@@ -68,6 +68,6 @@ extension Auction: Codable {
         let uniqueIdentifier: String = try container.decode(String.self, forKey: .uniqueIdentifier)
         
         
-        self.init(actualEndDate: actualEndDate, archived: archived, auctionAppType: auctionAppType, conditionCodeName: conditionCodeName, creationDate: "\(creationDate)", description: description, id: id, inventoryCode: inventoryCode, modificationDate: "\(modificationDate)", orgId: orgId, quantity: quantity, selected: selected, title: title, uniqueIdentifier: uniqueIdentifier)
+        self.init(archived: archived, auctionAppType: auctionAppType, creationDate: "\(creationDate)", id: id, inventoryCode: inventoryCode, modificationDate: "\(modificationDate)", orgId: orgId, selected: selected, uniqueIdentifier: uniqueIdentifier, actualEndDate: actualEndDate, conditionCodeName: conditionCodeName, description: description, quantity: quantity, title: title)
     }
 }

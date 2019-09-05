@@ -14,7 +14,7 @@ struct AuctionViewModel {
     var model: Auction
     
     var date: Date {
-        let date = Date(timeIntervalSince1970: TimeInterval(model.actualEndDate) / milliSecondsFactor)
+        let date = Date(milliseconds: model.actualEndDate)
         return date
     }
     

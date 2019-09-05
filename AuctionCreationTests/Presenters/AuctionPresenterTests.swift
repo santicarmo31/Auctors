@@ -34,7 +34,6 @@ class AuctionPresenterTests: XCTestCase {
         
         presenter.fetchAuction()
         
-        
         wait(for: [serviceExpectation], timeout: 0.1)
     }
     
@@ -56,11 +55,9 @@ class AuctionPresenterTests: XCTestCase {
     }
     
     func testUpdateAuction() {
-        let expectedTitle = "Update test"
         let auctionHolder = MockModel.auctionHolder
-        var updatedAuction = MockModel.auctionHolder.auction
-        
-        updatedAuction.title = expectedTitle
+        let updatedAuction = MockModel.updatedAuction
+        let expectedTitle = updatedAuction.title                
         
         presenter = AuctionPresenter(view: auctionView)
         presenter.auctionHolder = auctionHolder

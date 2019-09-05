@@ -19,7 +19,7 @@ class AuctionTableViewCell: UITableViewCell, ReusableIdentifier {
     
     // MARK: - Vars & Constants
     
-    let defaultPickerView = UIDatePicker()
+    let datePickerView = UIDatePicker()
     private let dateFormat = "dd MMM yyyy"
     
     // MARK: - Life Cycle
@@ -40,10 +40,16 @@ class AuctionTableViewCell: UITableViewCell, ReusableIdentifier {
         descriptionTextfield.text = viewModel.description
         quantityTextfield.text = viewModel.quantity
         titleTextfield.text = viewModel.title
-        setInputViews(startingDate: viewModel.date)
+        configureDatePicker(startingDate: viewModel.date)
+        setInputViews()
     }
     
-    func setInputViews(startingDate: Date){
+    private func configureDatePicker(startingDate: Date) {
+        datePickerView.setDate(startingDate, animated: false)
+        datePickerView.addTarget(self, action: #selector(selectDate(sender:)), for: .valueChanged)
+    }
+    
+    private func setInputViews(){
         let keyboardToolbar = UIToolbar()
         let flexBarButton = UIBarButtonItem(
             barButtonSystemItem: .flexibleSpace,
@@ -58,10 +64,9 @@ class AuctionTableViewCell: UITableViewCell, ReusableIdentifier {
         
         keyboardToolbar.sizeToFit()
         keyboardToolbar.items = [flexBarButton, doneBarButton]
-        defaultPickerView.setDate(startingDate, animated: false)
-        defaultPickerView.addTarget(self, action: #selector(selectDate(sender:)), for: .valueChanged)
+        
         actualEndDateTextfield.inputAccessoryView = keyboardToolbar
-        actualEndDateTextfield.inputView = defaultPickerView
+        actualEndDateTextfield.inputView = datePickerView
     }
     
     @objc private func hideTextField() {
